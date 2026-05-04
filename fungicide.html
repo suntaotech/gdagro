@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -10,7 +10,7 @@ header{display:flex;justify-content:space-between;align-items:center;padding:16p
 header img{height:52px}.company{display:flex;align-items:center;gap:10px;font-weight:700}.company span{font-size:18px}
 .nav-links{display:flex;align-items:center;gap:18px}.nav-links a{color:#111;text-decoration:none;font-size:16px;font-weight:600;position:relative}.nav-links a:hover{color:#0b5d1e}
 .dropdown{display:none;position:absolute;background:#fff;min-width:220px;box-shadow:0 8px 18px rgba(0,0,0,.12);padding:8px;border-radius:8px;top:100%;left:0;z-index:20}.dropdown a{display:block;padding:6px;color:#111;text-decoration:none}.dropdown a:hover{color:#0b5d1e}
-.hero{height:420px;background:url('fungicide/Fungicide Banner.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero{height:420px;background:url('fungicide/fungicide-banner.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
 .section{padding:45px 24px;max-width:1200px;margin:auto}.section h2{text-align:center;font-size:32px;margin-bottom:30px}
 .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{border:1px solid #e5e7eb;border-radius:12px;padding:12px;text-align:center;background:#fff;transition:transform .25s,box-shadow .25s;cursor:pointer}.product:hover{transform:scale(1.05);box-shadow:0 4px 18px rgba(0,0,0,.2)}.product img{width:100%;height:250px;object-fit:contain;border-radius:8px}.product h3{margin:10px 0 6px;font-size:18px;color:#0b5d1e}.product p{margin:2px 0;font-size:14px;color:#333}
 .footer{background:#0b3d0b;color:#fff;padding:18px 24px;text-align:center;font-size:14px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}footer a{color:#fff;text-decoration:none}
@@ -64,7 +64,7 @@ header img{height:52px}.company{display:flex;align-items:center;gap:10px;font-we
 </div>
 
 <div class="product" data-index="2" onclick="openLightbox(2)">
-<img src="fungicide/Captan.jpg" alt="Captan 50% WP">
+<img src="fungicide/captan.jpg" alt="Captan 50% WP">
   <h3>Captan 50% WP</h3>
   <p><strong>Target Crops:</strong> Apples, Grapes, Stone Fruits</p>
   <p><strong>Disease:</strong> Scab, Leaf Spot, Anthracnose</p>
@@ -120,7 +120,7 @@ header img{height:52px}.company{display:flex;align-items:center;gap:10px;font-we
 </div>
 
 <div class="product" data-index="9" onclick="openLightbox(9)">
-<img src="fungicide/Mancozeb Metalaxyl-M.jpg" alt="Mancozeb+Metalaxyl-M 68% WP">
+<img src="fungicide/mancozeb-metalaxyl-m.jpg" alt="Mancozeb+Metalaxyl-M 68% WP">
   <h3>Mancozeb+Metalaxyl-M 68% WP</h3>
   <p><strong>Target Crops:</strong> Rice, Banana, Sugarcane</p>
   <p><strong>Disease:</strong> Sheath blight, Leaf spot</p>
@@ -136,7 +136,7 @@ header img{height:52px}.company{display:flex;align-items:center;gap:10px;font-we
 </div>
 
 <div class="product" data-index="11" onclick="openLightbox(11)">
-<img src="fungicide/Picoxystrobin.jpg" alt="Picoxystrobin 22.5% SC">
+<img src="fungicide/picoxystrobin.jpg" alt="Picoxystrobin 22.5% SC">
   <h3>Picoxystrobin 22.5% SC</h3>
   <p><strong>Target Crops:</strong> Tice, Grapes, Cereals</p>
   <p><strong>Disease:</strong> Leaf spot, Rust, Powdery mildew</p>
@@ -144,7 +144,7 @@ header img{height:52px}.company{display:flex;align-items:center;gap:10px;font-we
 </div>
 
 <div class="product" data-index="12" onclick="openLightbox(12)">
-<img src="fungicide/Propiconazole.jpg" alt="Propiconazole 25% EC">
+<img src="fungicide/propiconazole.jpg" alt="Propiconazole 25% EC">
   <h3>Propiconazole 25% EC</h3>
   <p><strong>Target Crops:</strong> wheat, barley, vegetables</p>
   <p><strong>Disease:</strong> leaf spot, rust, powdery mildew</p>
@@ -160,7 +160,7 @@ header img{height:52px}.company{display:flex;align-items:center;gap:10px;font-we
 </div>
 
 <div class="product" data-index="14" onclick="openLightbox(14)">
- <img src="fungicide/Pyraclostrobin.jpg" alt="Pyraclostrobin 25% SC">
+ <img src="fungicide/pyraclostrobin.jpg" alt="Pyraclostrobin 25% SC">
   <h3>Pyraclostrobin 25% SC</h3>
   <p><strong>Target Crops:</strong> Grapes, Vegetables, Cereals</p>
   <p><strong>Disease:</strong>Powdery mildew, Leaf spot</p>
@@ -204,12 +204,12 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 // Fungicide Lightbox 图片数组
 const images = [
-'fungicide/azoxystrobin.jpg','fungicide/boscalid.jpg','fungicide/Captan.jpg',
+'fungicide/azoxystrobin.jpg','fungicide/boscalid.jpg','fungicide/captan.jpg',
 'fungicide/carbendazim.jpg','fungicide/chlorothalonil.jpg','fungicide/copper hydroxide.jpg',
 'fungicide/copper oxychloride.jpg','fungicide/difenoconazole.jpg','fungicide/hexaconazole.jpg',
-'fungicide/Mancozeb Metalaxyl-M.jpg','fungicide/mancozeb.jpg',
-'fungicide/Picoxystrobin.jpg','fungicide/Propiconazole.jpg','fungicide/prothioconazole.jpg',
-'fungicide/Pyraclostrobin.jpg','fungicide/tebuconazole.jpg'
+'fungicide/mancozeb-metalaxyl-m.jpg','fungicide/mancozeb.jpg',
+'fungicide/picoxystrobin.jpg','fungicide/propiconazole.jpg','fungicide/prothioconazole.jpg',
+'fungicide/pyraclostrobin.jpg','fungicide/tebuconazole.jpg'
 ];
 
 let currentIndex = 0;
